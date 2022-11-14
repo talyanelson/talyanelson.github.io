@@ -1,0 +1,21 @@
+/* CSS Document */
+
+
+
+h1 {
+    color: rgb(239, 29, 18);
+}
+
+body {
+    
+    background: rgb(230,176,247);
+    background: radial-gradient(circle, rgba(230,176,247,0.5508797268907564) 7%, rgba(191,230,221,1) 42%, rgba(231,189,161,0.6153054971988796) 100%);
+
+    color: rgb(234, 15, 238);
+}
+
+p {
+    padding-left: 40pt;
+    font-size: smaller;
+  }
+
