@@ -14,31 +14,55 @@ a:visited {
    }
 
 
-/* topnav stuff */
-   .topnav {
-    overflow: hidden;
+/* sidebar stuff */
+   .sidebar {
+    overflow: auto; 
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: clear;
+    position: fixed;
+    height: 100%;
+    text-align: right; 
   }
   
-  .topnav a {
-    float: left;
+  .sidebar a {
+    display: block;
     color: black;
-    text-align: center;
-    padding: 40px 40px;
+    padding: 16px;
     text-decoration: none;
-    font-size: 18px;
   }
-  
-  .topnav a:hover {
+  .sidebar a:hover:not(.active) {
     background-color: clear;
     color: magenta;
   }
   
-  .topnav a.active {
+  .sidebar a.active {
     background-color: clear;
     color: blue;
   }
 
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
 
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
 
 
 
@@ -46,7 +70,7 @@ a:visited {
 /* margins of the whole site */
 html, body {
     height: 100%;
-    margin-left:5%;
+    margin-left:7%;
     margin-right:5%;
     margin-bottom:0%;
     margin-top:0%;
@@ -84,4 +108,5 @@ h2 {
   footer {
     padding: 0 20px;
     line-height: 2px;
+  }
   }
