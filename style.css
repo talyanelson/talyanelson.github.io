@@ -1,0 +1,87 @@
+
+
+/* all links turn white not purple */
+a:visited { 
+    text-decoration: none; 
+    color: white; 
+   }
+
+
+/* background color of whole site */
+   body { 
+    background: rgb(230,176,247);
+    background: radial-gradient(circle, rgba(230,176,247,0.5508797268907564) 7%, rgba(191,230,221,1) 42%, rgba(231,189,161,0.6153054971988796) 100%);
+   }
+
+
+/* topnav stuff */
+   .topnav {
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 40px 40px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .topnav a:hover {
+    background-color: clear;
+    color: magenta;
+  }
+  
+  .topnav a.active {
+    background-color: clear;
+    color: blue;
+  }
+
+
+
+
+
+
+/* margins of the whole site */
+html, body {
+    height: 100%;
+    margin-left:5%;
+    margin-right:5%;
+    margin-bottom:0%;
+    margin-top:0%;
+        
+
+}
+
+h1 {
+  color: black;
+  font-weight: lighter;
+}
+
+
+h2 {
+    color: black;
+    font-weight: lighter;
+}
+
+
+  .content {
+    min-height: 100%;
+  }
+  .content-inside {
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+
+
+/* footer stuff */
+  .footer {
+    height: 100px;
+    margin-top: -50px;
+    text-align: center;
+  }
+  footer {
+    padding: 0 20px;
+    line-height: 2px;
+  }
